@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vamsidhar's Resume</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        const scrollingText = document.getElementById("scrollingText");
+        let position = 0;
+
+        setInterval(() => {
+            position -= 1;
+            scrollingText.style.transform = `translateX(${position}px)`;
+            if (position < -scrollingText.offsetWidth) {
+                position = window.innerWidth;
+            }
+        }, 20);
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .headerColumn {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .headerRow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .parentDiv {
+            padding: 0 10%;
+        }
+
+        .myDiv {
+            border: 2px outset black;
+            background-color: #F5F5F7;
+            text-align: left;
+            border-radius: 20px;
+            font-family: Product Sans;
+            padding: 0 5%;
+        }
+
+        .myDivCol1 {
+            background-color: #FFF;
+            text-align: left;
+            border-radius: 20px;
+            font-family: Product Sans;
+            padding: 0;
+        }
+
+        .mySubDiv {
+            border: 2px outset black;
+            background-color: #F5F5F7;
+            text-align: left;
+            border-radius: 20px;
+            font-family: Product Sans;
+        }
+
+        .para {
+            font-family: Product Sans;
+        }
+
+        .titles {
+            font-family: Product Sans;
+        }
+
+        .mailto-link {
+            text-decoration: none;
+            /* Remove underline */
+            color: inherit;
+            /* Inherit text color from parent */
+        }
+
+        .header {
+            margin: 0;
+            padding: 0.2cm 0cm 0cm 0cm;
+        }
+
+        /* Style for the progress bar */
+        progress {
+            width: 200px;
+            /* Set the width as desired */
+            height: 5px;
+            /* Set the height as desired */
+            background-color: #F5F5F7;
+            /* Set the background color to gray */
+            border: none;
+            /* Remove the border */
+            border-radius: 0;
+            /* Make it rectangular */
+        }
+
+        progress::-webkit-progress-value {
+            background-color: black;
+            /* Set the progress bar color to black for WebKit browsers */
+        }
+    </style>
+</head>
+
+<center>
+
+    <center>
+        <h1 class="titles">Vamsidhar Kolukuluri</h1>
+        <h4 class="titles">UG Student @ <a href="https://jntugv.edu.in/" class="mailto-link"><em>JNTUGV,
+                    Vizianagaram</em></a></h4>
+        <h4 class="titles">PG Student @ <a href="https://www.nitk.ac.in/" class="mailto-link"><em>NITK,
+                    Surathkal</em></a></h4>
+        <hr>
+        <div class="scrolling-text" id="scrollingText" style="font-family: Product Sans; color: #DB4437;"><strong>Note:
+                This website is best viewed in a PC or Laptop Screen with minimum 1920x1080 resolution.</strong></div>
+    </center>
+    <hr>
+    <div class="parentDiv headerRow">
+        <div class="headerColumn">
+            <div class="mySubDiv">
+                <a href="https://wa.me/+919346591922" class="mailto-link">
+                    <center>
+                        <h3><span style="color: #25D366">Connect with WhatsApp! </span>9346591922</h3>
+                    </center>
+                </a>
+            </div>
+        </div>
+        <div class="headerColumn">
+            <div class="mySubDiv">
+                <a href="https://www.linkedin.com/in/vamsidhar-kolukuluri-aab60a19b/" class="mailto-link">
+                    <center>
+                        <h3>Have a look at my <span style="color: #0072b1">LinkedIn </span>Profile!</h3>
+                    </center>
+                </a>
+            </div>
+        </div>
+        <div class="headerColumn">
+            <div class="mySubDiv">
+                <a href="mailto:vamsidhar8386@gmail.com" class="mailto-link">
+                    <center>
+                        <h4>Reach me at vamsidhar8386 @ <span style="color: #4285F4">g</span>
+                            <span style="color: #DB4437">m</span>
+                            <span style="color: #F4B400">a</span>
+                            <span style="color: #0F9D58">i</span>
+                            <span style="color: #E01E5A">l</span> . com
+                        </h4>
+                    </center>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="parentDiv">
+        <div class="row">
+
+            <!-- ! First Column-->
+            <div class="column">
+                <div class="myDivCol1">
+                    <h1>Education</h1>
+                    <ul>
+                        <li><strong>B. Tech (CSE) (2019-23)</strong> - 8 CGPA</li>
+                        <p><em>JNTUGV - CEV(A), formerly JNTUK - UCEV, Vizianagaram.</em></p>
+                        <li><strong>Intermediate (2017-19)</strong> - 10 GPA</li>
+                        <p><em>Sasi Junior College, Tadepalligudem, West Godavari.</em></p>
+                        <li><strong>SSC (2017)</strong> - 10 GPA</li>
+                        <p><em>Montessori EM School, Tadepalligudem, West Godavari.</em></p>
+                    </ul>
+                </div>
+                <div class="myDivCol1">
+                    <h1 style="margin-bottom: -15px;">Skills</h1>
+                    <div class="row">
+                        <div class="column">
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C Language</li>
+                                <li>SQL</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="column" style="padding: 20px 0px 0px 0px;">
+                            <progress id="file" max="100" value="75"></progress>
+                            <progress id="file" max="100" value="60"></progress>
+                            <progress id="file" max="100" value="55"></progress>
+                            <progress id="file" max="100" value="70"></progress>
+                            <progress id="file" max="100" value="50"></progress>
+                            <progress id="file" max="100" value="60"></progress>
+                            <progress id="file" max="100" value="70"></progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="myDivCol1">
+                    <h1 style="margin-top: 0px; margin-bottom: -5px;">Areas of Interest</h1>
+                    <ul>
+                        <li>Database Management System</li>
+                        <li>Computer Networks</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Front-End Development</li>
+                        <li>Deep Learning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ! Second Column-->
+            <div class="column">
+
+                <div class="myDiv">
+                    <h1>Project</h1>
+                    <h3><strong>Stress Detection through Speech Analysis</strong></h3>
+                    <ul>
+                        <li>A project was built to develop a model that can
+                            detect stress in speech using a convolutional
+                            neural network (CNN).</li>
+                        <li>The RAVDESS dataset was used to train the
+                            model, and Mel-frequency cepstral coefficients
+                            (MFCCs) were used as a preprocessing
+                            technique</li>
+                        <li>The CNN was able to achieve an accuracy of
+                            89.16% on the test set.</li>
+                        <li> The results suggest that CNNs can be used to
+                            effectively detect stress in speech, which could
+                            be a valuable tool for a variety of applications.</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="myDiv">
+                    <h1>Mini Projects</h1>
+                    <h4 style="text-align: justify;"><strong>Voice Assistant using PYTHON</strong></h4>
+                    <p>The mini project titled "Voice Assistant using
+                        Python" uses the pyttsx3 module to create a
+                        voice assistant that can respond to user
+                        commands and questions. The assistant can be
+                        used to perform a variety of tasks.</p>
+                    <h4><strong>Movie Recommendation System</strong></h4>
+                    <p>A movie recommendation system is a tool that
+                        suggests movies to users. It uses the TMDB
+                        dataset to calculate the cosine similarity
+                        between movies, and then recommends movies
+                        that are like the ones that users have already
+                        enjoyed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="titles" style="margin-top: -20px;">
+            <h1 style="text-align: left;">Declaration</h1>
+            <p style="text-align: left;">I solemnly declare that the information contained in this resume is true and
+                correct to the best of my
+                knowledge. I understand that any misrepresentation or omission of information may result in my
+                disqualification from employment or termination of employment.</p>
+        </div>
+    </div>
+
+    <center>
+        <p class="para" style="padding: 0px 200px 0px 200px;"><strong>Designed by <em><a
+                        href="https://www.linkedin.com/in/vamsidhar-kolukuluri-aab60a19b">Vamsidhar
+                        Kolukuluri</a></em> with <span class="heart">&#10084;&#65039;</span></strong></p>
+    </center>
+
+    </body>
+
+</html>
